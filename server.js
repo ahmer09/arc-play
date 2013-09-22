@@ -1,7 +1,7 @@
 // -- Module dependencies.
 var express     = require('express'),
     http        = require('http'),
-    logo        = require('./library/logo'),
+    logo        = require('./core/library/logo'),
     color       = require('colors'),
     moment      = require('moment');
 bootstrap   = require('./bootstrap');
@@ -19,7 +19,7 @@ conf            (app, express, env);
 bootstrap.boot(app);
 
 // -- Routes
-require('./controllers/default/route')(app);
+require('./core/controllers/default/route')(app);
 
 // -- Only listen on $ node app.js
 logo.print();
