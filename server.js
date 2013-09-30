@@ -20,6 +20,7 @@ bootstrap.boot(app);
 
 // -- Routes
 require('./core/controllers/default/route')(app);
+require('./core/controllers/forum/route')(app);
 
 // -- Only listen on $ node app.js
 logo.print();
